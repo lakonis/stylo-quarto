@@ -1,0 +1,250 @@
+<meta charset="utf-8" >
+$if(quarto-version)$
+<meta name="generator" content="quarto-$quarto-version$" >
+$else$
+<meta name="generator" content="quarto" >
+$endif$
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
+
+
+<meta name="DC.type" content="Text" >
+<meta name="DC.format" content="text/html" >
+<meta name="DC.type" content="journalArticle" >
+<meta name="DC.type" class="typeArticle" content="$typeArticle$" >
+<meta name="DC.title" content="$title$" >
+<meta name="DC.title.Main" content="$title$" >
+$if(subtitle)$
+<meta name="DC.title.Subtitle" content="$subtitle$" >
+$endif$
+$if(publisher)$
+<meta name="DC.publisher" class="editeur" content="$publisher$" >
+$endif$
+$if(prod)$
+<meta name="DC.publisher" class="producteur" content="$prod$" >
+$endif$
+$if(prodnum)$
+<meta name="DC.publisher" class="producteurNum" content="$prodnum$" >
+$endif$
+$if(diffnum)$
+<meta name="DC.publisher" class="diffuseur" content="$diffnum$" >
+$endif$
+<meta name="DC.language" content="$lang$" >
+$if(date)$
+<meta name="DC.date" class="completeDate" content="$year$-$month$-$day$" >
+<meta name="DC.date" class="year" content="$year$" >
+$endif$
+$if(rights)$
+<meta name="DC.rights" content="$rights$" >
+$endif$
+$if(journal)$
+<meta name="DC.source" content="$journal$" >
+$endif$
+$if(dossier)$
+<meta name="DC.relation.isPartOf" content="$dossier$" >
+$endif$
+
+<!--Utilisation de MARCREL pour specifier le role du "contributeur" en Dublin core
+  drt = director -->
+$if(director)$
+$for(director)$
+<meta name="director" content="$director.forname$ $director.surname$" >
+<meta name="DC.contributor.drt" content="$director.forname$ $director.surname$" >
+<meta name="MARCREL.drt" content="$director.forname$ $director.surname$" >
+$endfor$
+$endif$
+
+<!--Auteur de l'article -->
+$if(authors)$
+$for(authors)$
+<meta name="author" content="$authors.forname$ $authors.surname$" >
+<meta name="DC.creator" content="$authors.forname$ $authors.surname$" >
+$endfor$
+$endif$
+
+<!--Resumes -->
+$if(abstract)$
+$for(abstract)$
+<meta name="description" xml:lang="$abstract.lang$" lang="$abstract.lang$" content="$abstract.text$" >
+<meta name="DC.description" xml:lang="$abstract.lang$" lang="$abstract.lang$" content="$abstract.text$" >
+$endfor$
+$endif$
+
+<!--Mots cles auteurs -->
+$if(keywords)$
+$for(keywords)$
+<meta name="keywords" xml:lang="$keywords.lang$" lang="$keywords.lang$" content="$keywords.list$" >
+$endfor$
+$endif$
+
+$if(controlledKeywords)$
+$for(controlledKeywords)$
+$if(controlledKeywords.label)$
+<meta name="DC.subject" xml:lang="fr" lang="fr" content="$controlledKeywords.label$" >
+$endif$
+$endfor$
+$endif$
+
+<!--  traducteur avec specification MARCREL -->
+$if(translators)$
+$for(translators)$
+<meta name="DC.contributor.trl" content="$translators.forname$ $translators.surname$" >
+<meta name="MARCREL.trl" content="$translators.forname$ $translators.surname$" >
+$endfor$
+$endif$
+
+
+<!--  transcripteur avec specification MARCREL -->
+$if(transcriber)$
+$for(transcriber)$
+<meta name="DC.contributor.trc" content="$transcriber.forname$ $transcriber.surname$" >
+<meta name="MARCREL.trc" content="$transcriber.forname$ $transcriber.surname$" >
+$endfor$
+$endif$
+
+<!--  redacteur avec specification MARCREL -->
+$if(issueDirectors)$
+$for(issueDirectors)$
+<meta name="DC.contributor.edt" content="$issueDirectors.forname$ $issueDirectors.surname$" >
+<meta name="MARCREL.edt" content="$issueDirectors.forname$ $issueDirectors.surname$" >
+$endfor$
+$endif$
+
+
+<!-- schema citation : Indexation pour Google Scholar  -->
+$if(journal)$
+<meta name="citation_journal_title" content="$journal$" >
+$endif$
+$if(publisher)$
+<meta name="citation_publisher" content="$publisher$" >
+$endif$
+$for(authors)$
+<meta name="citation_authors" content="$authors.forname$ $authors.surname$" >
+$endfor$
+<meta name="citation_title" content="$title$" >
+$if(subtitle)$
+<meta name="citation_subtitle" content="$subtitle$" >
+$endif$
+$if(date)$
+<meta name="citation_publication_date" content="$date$" >
+<meta name="citation_online_date" content="$date$" >
+$endif$
+$if(issnnum)$
+<meta name="citation_issn" content="$issnnum$" >
+$endif$
+$if(dossier)$
+ <meta name="citation_issue" content="$dossier.id$" >
+$endif$
+<meta name="citation_language" content="$lang$" >
+
+$if(abstract)$
+$for(abstract)$
+<meta name="citation_abstract" xml:lang="$abstract.lang$" lang="$abstract.lang$" content="$abstract.text$" >
+$endfor$
+$endif$
+
+
+$if(keywords)$
+$for(keywords)$
+<meta name="citation_keywords" xml:lang="$keywords.lang$" lang="$keywords.lang$" content="$keywords.list$" >
+$endfor$
+$endif$
+
+
+<!--PRISM schema - Publishing Requirements for Industry Standard Metadata
+Schema specialise pour les revues et journaux-->
+$if(url_article)$
+<meta name="prism.url" content="$url_article$">
+$endif$
+$if(journal)$
+<meta name="prism.publicationName" content="$journal$">
+$endif$
+$if(publisher)$
+<meta name="prism.corporateEntity" content="$publisher$">
+$endif$
+$if(dossier)$
+<meta name="prism.issueName" content="$dossier.title$">
+<meta name="prism.number" content="$dossier.id$" >
+$endif$
+$if(date)$
+<meta name="prism.publicationDate" content="$date$">
+$endif$
+$if(typeArticle)$
+<meta name="prism.genre" content="$typeArticle$">
+$endif$
+$if(issnnum)$
+<meta name="prism.issn" content="$issnnum$">
+$endif$
+$if(abstract)$
+$for(abstract)$
+<meta name="prism.teaser" xml:lang="$abstract.lang$" lang="$abstract.lang$" content="$abstract.text$" >
+$endfor$
+$endif$
+
+
+<!--RDFa pour ajout des metadonnees DC-->
+<meta property="dc:format" content="text/html" >
+$if(url_article)$
+<meta property="dc:identifier" content="$url_article$" >
+$endif$
+$if(issnnum)$
+<meta property="dc:identifier" content="$issnnum$" >
+$endif$
+<meta property="dc:title" content="$title$" >
+<meta property="dc:title.Main" content="$title$" >
+$if(subtitle)$
+<meta property="dc:title.Subtitle" content="$subtitle$" >
+$endif$
+$if(publisher)$
+<meta property="dc:publisher" content="$publisher$" >
+$endif$
+<meta property="dc:language" content="$lang$" >
+<meta property="dc:type" content="journalArticle" >
+$if(date)$
+<meta property="dcterm:created" content="$date$" >
+$endif$
+$if(rights)$
+<meta property="dc:rights" content="$rights$" >
+$endif$
+$if(dossier)$
+<meta property="dc:relation.isPartOf" content="$dossier.title$" >
+$endif$
+$if(journal)$
+<meta property="dc:source" content="$journal$" >
+$endif$
+
+$for(authors)$
+<meta property="dc:creator" content="$authors.forname$ $authors.surname$" >
+$endfor$
+
+$if(translators)$
+$for(translators)$
+<meta property="dc:contributor.trl" content="$translators.forname$ $translators.surname$" >
+$endfor$
+$endif$
+
+$if(transcriber)$
+$for(transcriber)$
+<meta property="dc:contributor.trc" content="$transcriber.forname$ $transcriber.surname$" >
+$endfor$
+$endif$
+
+$if(abstract)$
+$for(abstract)$
+<meta property="dcterms:abstract" xml:lang="$abstract.lang$" lang="$abstract.lang$" content="$abstract.text$" >
+$endfor$
+$endif$
+
+$if(controlledKeywords)$
+$for(controlledKeywords)$
+$if(controlledKeywords.label)$
+<meta property="dc:subject" xml:lang="fr" lang="fr" content="$controlledKeywords.label$" >
+<link rel="dc:subject" href="$controlledKeywords.uriRameau$">
+$endif$
+$endfor$
+$endif$
+
+
+
+
+<title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>

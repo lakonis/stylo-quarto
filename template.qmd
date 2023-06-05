@@ -1,0 +1,88 @@
+---
+title: Stylo Template
+format:
+  stylo-pdf:
+    keep-tex: true  
+  stylo-html: 
+    template-partials:
+      - metadata.html
+      - title-block.html
+title: « Je suis amoureuse de la forêt, comme du fleuve »
+subtitle: >-
+  Partage et merveilleux dans la collaboration photolittéraire de S. Corinna
+  Bille et Suzi Pilet
+abstract:
+  - lang: fr
+    text_f: >-
+      Lorem ipsum en français
+  - lang: en
+    text_f: >-
+      Lorem ipsum in english
+articleslies:
+  - auteur: ''
+    titre: ''
+    url: ''
+authors:
+  - affiliations: University of Queensland
+    biography: >-
+      Beth F. Kearney est doctorante à The University of Queensland (Australie)
+      où elle étudie le rôle joué par la photographie au sein des récits de soi
+      au féminin publiés depuis 2000. Pour son projet de doctorat, elle
+      bénéficie de la bourse gouvernementale australienne RTP et de la bourse
+      Kathleen Campbell-Brown pour les études françaises. Ses recherches
+      s’inscrivent principalement dans les champs de la littérature moderne et
+      contemporaine de langue française, des études intermédiales et des écrits
+      des femmes. 
+    forname: Beth F.
+    surname: Kearney
+date: '2021-03-19'
+director:
+  - foaf: ''
+    forname: ''
+    gender: ''
+    isni: ''
+    orcid: ''
+    surname: ''
+    viaf: ''
+dossier:
+  - id: '3'
+    title_f: Œuvres photolittéraires et couples créateurs
+id: phlit-3-1_wp3318
+keywords:
+  - lang: fr
+    list_f:
+      - Suzi Pilet
+      - photolittérature
+  - lang: en
+    list_f:
+      - Suzi Pilet
+      - photolitterature
+lang: fr
+link-citations: true
+nocite: '@*'
+rights: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+translations:
+  - lang: ''
+    titre: ''
+    url: ''
+translator:
+  - forname: ''
+    surname: ''
+bibliography: bibliography.bib
+---
+
+En 1975, l'écrivaine S. Corinna Bille (1912-1979) et la photographe Suzi Pilet (1916-2017) se sont jointes pour créer un livre inspiré du paysage sylvestre de la Suisse, leur terre natale. Source d'inspiration partagée, le Valais est le canton sud du pays qui pénètre l'univers des deux collaboratrices. En tant qu'amies proches, elles « \[se sont\] entendue\[s\] parce qu\'\[elles\] avai\[ent\] une espèce de parenté intérieure, c'était des élans du cœur, toujours », pour emprunter les mots de Pilet elle-même (dans Kalbfuss), qui évoque la *passion* au cœur de l'amitié et de la collaboration artistique. Motivées à créer par ces « élans du cœur », les deux collaboratrices partageaient au fil de plusieurs décennies un amour sans borne pour la région[^1], ce qui est démontré, entre autres, par la grande quantité de photographies pilliennes consacrées à cet espace et par ce passage autobiographique de Bille : « J'ai une véritable passion pour la forêt, je suis amoureuse de la forêt, comme du fleuve, un amour violent, absurde » (*FFR*, 25 et *FJ*, 17). Le Valais est donc un véritable catalyseur de création partagée, constat de départ illustré parfaitement par les deux albums photolittéraires à l'étude, créés à quatre mains[^2].
+
+
+[^1]: Née Stéphanie Bille, S. Corinna Bille rattache même son identité d'écrivaine à la terre suisse, car son prénom inventé s'inspire de la ville natale de sa mère « Corin » (Favre 2012 \[1981\], 13). Dans une monographie consacrée à son œuvre, Maryke de Courten (1989) adopte une perspective phénoménologique pour explorer les concepts bachelardiens de la « rêverie matérielle » et de l'« imaginaire ». Courten démontre, entre autres, que les rêveries matérielles du feu, de l'eau, du végétal et de l'intimité terrestre témoignent du rôle primordial joué par la terre suisse dans l'univers billien (1989, 49-159).
+
+[^2]: Sur la reliure ou sur la page de couverture des deux albums, les noms complets des deux collaboratrices sont affichés.
+
+
+---
+
+## Introduction {#sec-intro}
+
+*TODO* Create a template that demonstrates the appearance, formatting, layout, and functionality of your format. Learn more about journal formats at <https://quarto.org/docs/journals/>.
+
+
