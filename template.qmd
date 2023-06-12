@@ -5,8 +5,8 @@ format:
     keep-tex: true  
   stylo-html: 
     template-partials:
-      - metadata.html
-      - title-block.html
+      - partials/metadata.html
+      - partials/title-block.html
 title: « Je suis amoureuse de la forêt, comme du fleuve »
 subtitle: >-
   Partage et merveilleux dans la collaboration photolittéraire de S. Corinna

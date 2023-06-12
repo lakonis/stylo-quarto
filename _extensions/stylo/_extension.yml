@@ -12,7 +12,7 @@ contributes:
       include-in-header: header.tex
     html:
       template-partials:
-        - metadata.html
-        - title-block.html
+        - partials/metadata.html
+        - partials/title-block.html
       css: styles.css
 
