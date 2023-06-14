@@ -12,10 +12,10 @@ $endif$
 <meta name="DC.format" content="text/html" >
 <meta name="DC.type" content="journalArticle" >
 <meta name="DC.type" class="typeArticle" content="$typeArticle$" >
-<meta name="DC.title" content="$title$" >
-<meta name="DC.title.Main" content="$title$" >
+<meta name="DC.title" content="$title_f$" >
+<meta name="DC.title.Main" content="$title_f$" >
 $if(subtitle)$
-<meta name="DC.title.Subtitle" content="$subtitle$" >
+<meta name="DC.title.Subtitle" content="$subtitle_f$" >
 $endif$
 $if(publisher)$
 <meta name="DC.publisher" class="editeur" content="$publisher$" >
@@ -65,8 +65,8 @@ $endif$
 <!--Resumes -->
 $if(abstract)$
 $for(abstract)$
-<meta name="description" xml:lang="$abstract.lang$" lang="$abstract.lang$" content="$abstract.text$" >
-<meta name="DC.description" xml:lang="$abstract.lang$" lang="$abstract.lang$" content="$abstract.text$" >
+<meta name="description" xml:lang="$abstract.lang$" lang="$abstract.lang$" content="$abstract.text_f$" >
+<meta name="DC.description" xml:lang="$abstract.lang$" lang="$abstract.lang$" content="$abstract.text_f$" >
 $endfor$
 $endif$
 
