@@ -8,6 +8,7 @@ contributes:
       toc: true
       filters:
         - stylo.lua
+        - stylo.py
     pdf:
       include-in-header: header.tex
     html:
