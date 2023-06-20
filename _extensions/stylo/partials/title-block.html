@@ -13,6 +13,13 @@ $endif$
 $if(date)$
 <p class="date">date: $date$</p>
 $endif$
+
+$if(dossier)$
+$for(dossier)$
+<p class="dossier">Dossier $dossier.id$ : $dossier.title_f$</p>
+$endfor$
+$endif$
+
 $if(abstract)$
 $for(abstract)$
 <div class="abstract">
